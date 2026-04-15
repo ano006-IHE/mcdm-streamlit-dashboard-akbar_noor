@@ -51,7 +51,8 @@ for col in criteria_names:
     c1, c2 = st.sidebar.columns(2)
     with c1:
         # Slider for weights
-        weight = st.slider(f"Weight", min_value=0.0, max_value=1.0, value=1.0/len(criteria_names), key=f"w_{col}")
+        weight = st.slider(f"Weight", min_value=0.0, max_value=1.0, 
+                           value=1.0/len(criteria_names), key=f"w_{col}")
         weights_list.append(weight)
     with c2:
         # Cost or Benefit option button
